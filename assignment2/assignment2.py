@@ -38,17 +38,11 @@ def read_employees():
             print(f"Exception message: {message}")
         print(f"Stack trace: {stack_trace}")
 
-employees= read_employees()
-print(employees)
-
 
 # Task 3
 def column_index(column_name):
     idx = employees["fields"].index(column_name)
     return idx
-
-employee_id_column = column_index("employee_id")
-print(employee_id_column)
 
 # Task 4
 def first_name(row_number):
@@ -96,13 +90,10 @@ def all_employees_dict():
         master_dict[employee_id] = new_folder
     return master_dict
 
-final_dict = all_employees_dict()
-print(final_dict)
 
 # Task 10
 def get_this_value():
-    val = os.getenv("THISVALUE")
-    return val if val is not None else "ABC"
+    return os.getenv("THISVALUE")
 
 
 # Task 11
@@ -152,7 +143,7 @@ def create_minutes_list():
 
 # Task 15
 def write_sorted_list():
-    sorted_raw = sorted(minutes_list, key=lambda x: x[1])
+    sorted_raw = sorted(minutes_list, key=lambda x: (x[1], x[0]))
     
     converted_list = list(map(lambda x: (x[0], x[1].strftime("%B %d, %Y")), sorted_raw))
     
@@ -170,6 +161,7 @@ def write_sorted_list():
 employees = read_employees()
 
 employee_id_column = column_index("employee_id")
+
 final_dict = all_employees_dict()
 
 # Task 12 
