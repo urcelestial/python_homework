@@ -7,11 +7,11 @@ try:
         while True:
             # Asking the user for input
             if first_prompt:
-                diary_input = input("What happened today?")
+                diary_input = input("What happened today? ")
                 first_prompt = False
             # Asking the user after the first input
             else:
-                diary_input = input("What else?")
+                diary_input = input("What else? ")
                 
 
             # Finish the program when there is a specific input
