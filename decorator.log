@@ -1,0 +1,16 @@
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: True
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: name=Alice,age=20,major=Computer Science
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: True
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: Student Information: name=Alice,age=20,major=Computer Science
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: None
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: None
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: None
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: None
