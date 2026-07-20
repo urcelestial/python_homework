@@ -12,12 +12,9 @@ def make_hangman(secret_word):
         
 
         if "_" not in word:
-            print(" ".join(word))
             print("You win!")
             return True
-        else:
-            print(" ".join(word))
-            return False
+        return False
     return hangman_closure
 
 

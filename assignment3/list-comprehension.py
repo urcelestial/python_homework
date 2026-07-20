@@ -5,7 +5,7 @@ with open("../csv/employees.csv", "r") as file:
 
     header = next(csv_reader)
 
-    employee_data = list(csv_reader)
+    employee_data = [row for row in csv_reader]
 
 full_name_list = [f"{row[0]} {row[1]}" for row in employee_data]
 print("\n",full_name_list, "\n")

@@ -13,30 +13,27 @@ def logger_decorator(func):
 
         result = func(*args, **kwargs)
 
-        log_message = (
-            f"function: {func_name}, "
-            f"positional args: {positional_args}, "
-            f"keyword args: {keyword_args}, "
-            f"result: {result}"
-        )
+        return_value = "none" if result is None else result
 
-        logger.log(logging.INFO, log_message)
+        logger.log(logging.INFO, f"function: {func_name}")
+        logger.log(logging.INFO, f"positional parameters: {positional_args}")
+        logger.log(logging.INFO, f"keyword parameters: {keyword_args}")
+        logger.log(logging.INFO, f"return: {return_value}")
 
         return result
     return wrapper
 
 @logger_decorator
 def greeting():
-    return("Hello, World!")
+    return None
 
 @logger_decorator
 def numbers(*args):
-    return sum(args)
+    return True
 
 @logger_decorator
 def student_info(**kwargs):
-    info = ",".join([f"{key}={value}" for key, value in kwargs.items()])
-    return f"Student Information: {info}"
+    return logger_decorator
 
 greeting()
 numbers(5, 10)

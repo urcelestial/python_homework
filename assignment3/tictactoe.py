@@ -4,28 +4,34 @@ class TictactoeException(Exception):
         self.message = message
 
 class Board:
+
+    valid_moves = [
+        "upper left", "upper center", "upper right",
+        "middle left", "center", "middle right",
+        "lower left", "lower center", "lower right"
+    ]
+
     def __init__(self):
         self.board_array = [[" " for _ in range(3)] for _ in range(3)]
         self.turn = "X"
         self.last_move = None
 
     def __str__(self):
-        board_str = ""
-        for row in self.board_array:
-            board_str += "|".join(row) + "\n"
-            board_str += "-----\n"
-        return board_str
+        rows = ["|".join(row) for row in self.board_array]
+        return "\n-----\n".join(rows) + "\n"
     
     def move(self, move_string):
         move_string = move_string.lower()
+
+        if move_string not in Board.valid_moves:
+            raise TictactoeException("That's not a valid move.")
+        
         move_mapping = {
             "upper left": (0, 0), "upper center": (0, 1), "upper right": (0, 2),
             "middle left": (1, 0), "center": (1, 1), "middle right": (1, 2),
             "lower left": (2, 0), "lower center": (2, 1), "lower right": (2, 2)
         }
 
-        if move_string not in move_mapping:
-            raise TictactoeException("That's not a valid move.")
 
         row, col = move_mapping[move_string]
 
