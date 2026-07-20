@@ -3,9 +3,6 @@ import logging
 logger = logging.getLogger(__name__ + "_parameter_log")
 logger.setLevel(logging.INFO)
 logger.addHandler(logging.FileHandler("./decorator.log","a"))
-...
-# To write a log record:
-logger.log(logging.INFO, "this string would be logged")
 
 def logger_decorator(func):
     def wrapper(*args, **kwargs):
@@ -30,17 +27,16 @@ def logger_decorator(func):
 
 @logger_decorator
 def greeting():
-    print("Hello, World!")
+    return("Hello, World!")
 
 @logger_decorator
-def numbers(num1, num2):
-    compare = type(num1) == type(num2)
-    print(f"Are the two numbers of the same type? {compare}")
-    
+def numbers(*args):
+    return sum(args)
+
 @logger_decorator
 def student_info(**kwargs):
     info = ",".join([f"{key}={value}" for key, value in kwargs.items()])
-    print(f"Student Information: {info}")
+    return f"Student Information: {info}"
 
 greeting()
 numbers(5, 10)

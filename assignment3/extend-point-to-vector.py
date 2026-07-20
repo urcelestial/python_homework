@@ -6,15 +6,15 @@ class Point:
         self.y = y
     
     def __eq__(self, other):
-        print(self.x == other.x and self.y == other.y)
+        return(self.x == other.x and self.y == other.y)
     
     def __str__(self):
-        print(f"Point({self.x}, {self.y})")
-    
+        return f"Point({self.x}, {self.y})"
+
     def distance_to(self, other):
         dx = self.x - other.x
         dy = self.y - other.y
-        print(math.sqrt(dx**2 + dy**2))
+        return math.sqrt(dx**2 + dy**2)
 
 
 class Vector(Point):
@@ -22,12 +22,12 @@ class Vector(Point):
         super().__init__(x, y)
     
     def __str__(self):
-        print(f"Vector<{self.x}, {self.y}>")
+        return f"Vector<{self.x}, {self.y}>"
 
     def __add__(self, other):
         v1 = self.x + other.x
         v2 = self.y + other.y
-        print(f"Vector({v1}, {v2})")
+        return Vector(v1, v2)
 
 
 # String Method for Point
@@ -42,7 +42,7 @@ point1.__eq__(point2)
 point1.distance_to(point2)
 
 # String Method for Vector
-vector1 = Vector(3, 4)
+vector1 = Vector(5, 6)
 vector1.__str__()
 
 # Vector Addition
