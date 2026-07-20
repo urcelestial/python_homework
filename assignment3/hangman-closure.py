@@ -9,10 +9,9 @@ def make_hangman(secret_word):
         guesses.append(letter)
 
         word = "".join(letter if letter in guesses else "_" for letter in secret_word)
-        
+        print(word)
 
         if "_" not in word:
-            print("You win!")
             return True
         return False
     return hangman_closure

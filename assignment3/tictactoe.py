@@ -78,7 +78,6 @@ class Board:
         return (False, f"{self.turn}'s turn")
 
 
-# --- MAINLINE GAMEPLAY ---
 
 game_board = Board()
 

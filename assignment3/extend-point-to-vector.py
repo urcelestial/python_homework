@@ -29,19 +29,19 @@ class Vector(Point):
 
 # String Method for Point
 point1 = Point(3, 4)
-point1.__str__()
+print(point1.__str__())
 
 # Equality Method
 point2 = Point(5, 10)
-point1.__eq__(point2)
+print(point1.__eq__(point2))
 
 # Distance Method
-point1.distance_to(point2)
+print(point1.distance_to(point2))
 
 # String Method for Vector
 vector1 = Vector(5, 6)
-vector1.__str__()
+print(vector1.__str__())
 
 # Vector Addition
 vector2 = Vector(1, 2)
-vector1.__add__(vector2)
+print(vector1.__add__(vector2))
