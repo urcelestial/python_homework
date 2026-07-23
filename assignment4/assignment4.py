@@ -73,6 +73,7 @@ dirty_data = pd.read_csv('dirty_data.csv')
 print(dirty_data)
 
 clean_data = dirty_data.copy()
+clean_data = clean_data.map(lambda x: x.strip() if isinstance(x, str) else x)
 
 # Removing Duplicate Rows from the DataFrame
 clean_data = clean_data.drop_duplicates()
