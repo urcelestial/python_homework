@@ -103,11 +103,11 @@ print(clean_data)
 
 # Convert Hire Date to datetime
 clean_data['Hire Date'] = clean_data['Hire Date'].astype(str).str.strip()
-clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], format='mixed', errors='coerce')
+clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], format= 'mixed')
 print(clean_data)
 
 # Strip whitespace and convert Name and Department to uppercase
-clean_data['Name'] = clean_data['Name'].str.strip().str.upper()
+clean_data['Name'] = clean_data['Name'].str.strip()
 clean_data['Department'] = clean_data['Department'].str.strip().str.upper()
 
 print('FINALIZED CLEAN DATA')
