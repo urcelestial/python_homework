@@ -73,7 +73,6 @@ dirty_data = pd.read_csv('dirty_data.csv')
 print(dirty_data)
 
 clean_data = dirty_data.copy()
-clean_data = clean_data.map(lambda x: x.strip() if isinstance(x, str) else x)
 
 # Removing Duplicate Rows from the DataFrame
 clean_data = clean_data.drop_duplicates()
@@ -103,16 +102,13 @@ clean_data['Salary'] = clean_data['Salary'].fillna(median_salary)
 print(clean_data)
 
 # Convert Hire Date to datetime
+clean_data['Hire Date'] = clean_data['Hire Date'].astype(str).str.strip()
 clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], format='mixed', errors='coerce')
 print(clean_data)
 
-# Strip whitespace
-clean_data['Name'] = clean_data['Name'].str.strip()
-clean_data['Department'] = clean_data['Department'].str.strip()
-
-# Convert Name and Department to uppercase
-clean_data['Name'] = clean_data["Name"].str.upper()
-clean_data['Department'] = clean_data["Department"].str.upper()
+# Strip whitespace and convert Name and Department to uppercase
+clean_data['Name'] = clean_data['Name'].str.strip().str.upper()
+clean_data['Department'] = clean_data['Department'].str.strip().str.upper()
 
 print('FINALIZED CLEAN DATA')
 print(clean_data)
