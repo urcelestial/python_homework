@@ -43,12 +43,6 @@ task2_employees = pd.read_csv('employees.csv')
 print(task2_employees)
 
 # Read data from a JSON file
-with open("additional_employees.json", "w") as file:
-    json.dump([
-        {'Name': 'Eve', 'Age': 28, 'City': 'Miami', 'Salary': 60000},
-        {'Name': 'Frank', 'Age': 40, 'City': 'Seattle', 'Salary': 95000}
-    ], file)
-
 json_employees = pd.read_json("additional_employees.json")
 print(json_employees)
 
@@ -112,7 +106,8 @@ clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], format='mixed'
 print(clean_data)
 
 # Strip whitespace
-clean_data = clean_data.map(lambda x: x.strip() if isinstance(x, str) else x)
+clean_data['Name'] = clean_data['Name'].str.strip()
+clean_data['Department'] = clean_data['Department'].str.strip()
 
 # Convert Name and Department to uppercase
 clean_data['Name'] = clean_data["Name"].str.upper()
