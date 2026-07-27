@@ -17,8 +17,13 @@ class Board:
         self.last_move = None
 
     def __str__(self):
-        rows = ["|".join(row) for row in self.board_array]
-        return "\n-----\n".join(rows) + "\n"
+        lines = []
+        lines.append(f" {self.board_array[0][0]} | {self.board_array[0][1]} | {self.board_array[0][2]} \n")
+        lines.append("-----------\n")
+        lines.append(f" {self.board_array[1][0]} | {self.board_array[1][1]} | {self.board_array[1][2]} \n")
+        lines.append("-----------\n")
+        lines.append(f" {self.board_array[2][0]} | {self.board_array[2][1]} | {self.board_array[2][2]} \n")
+        return "".join(lines)
     
     def move(self, move_string):
         move_string = move_string.lower()
