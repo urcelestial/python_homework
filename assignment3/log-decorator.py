@@ -33,7 +33,7 @@ def numbers(*args):
 
 @logger_decorator
 def student_info(**kwargs):
-    return logger_decorator
+    return "logger_decorator"
 
 greeting()
 numbers(5, 10)
