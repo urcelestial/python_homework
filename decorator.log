@@ -1,0 +1,100 @@
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: True
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: name=Alice,age=20,major=Computer Science
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: True
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: Student Information: name=Alice,age=20,major=Computer Science
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: None
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: None
+this string would be logged
+function: greeting, positional args: none, keyword args: none, result: None
+function: numbers, positional args: [5, 10], keyword args: none, result: None
+function: student_info, positional args: none, keyword args: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}, result: None
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: Hello, World!
+function: numbers
+positional parameters: [5, 10]
+keyword parameters: none
+return: 15
+function: student_info
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+return: Student Information: name=Alice,age=20,major=Computer Science
