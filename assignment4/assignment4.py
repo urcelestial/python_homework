@@ -94,16 +94,16 @@ print(clean_data)
 
 # Fill missing numeric values (use fillna)
 mean_age = clean_data['Age'].mean()
-clean_data['Age'] = clean_data['Age'].fillna(mean_age)
-
 median_salary = clean_data['Salary'].median()
+
+clean_data['Age'] = clean_data['Age'].fillna(mean_age)
 clean_data['Salary'] = clean_data['Salary'].fillna(median_salary)
 
 print(clean_data)
 
 # Convert Hire Date to datetime
 clean_data['Hire Date'] = clean_data['Hire Date'].astype(str).str.strip()
-clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], format= 'mixed')
+clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], format= 'mixed', errors='coerce')
 print(clean_data)
 
 # Strip whitespace and convert Name and Department to uppercase
