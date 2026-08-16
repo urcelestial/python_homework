@@ -2,7 +2,7 @@
 import logging
 logger = logging.getLogger(__name__ + "_parameter_log")
 logger.setLevel(logging.INFO)
-logger.addHandler(logging.FileHandler("./decorator.log","a"))
+
 
 def logger_decorator(func):
     def wrapper(*args, **kwargs):
@@ -29,11 +29,11 @@ def greeting():
 
 @logger_decorator
 def numbers(*args):
-    return True
+    return args
 
 @logger_decorator
 def student_info(**kwargs):
-    return logger_decorator
+    return kwargs
 
 greeting()
 numbers(5, 10)

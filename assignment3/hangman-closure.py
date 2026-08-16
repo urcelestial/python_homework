@@ -20,10 +20,6 @@ def make_hangman(secret_word):
 
 question = make_hangman(input("What is the secret word? "))
 
-answer = input("Guess a letter: ")
-
-question(answer)
-
 win = False
 while not win:
     answer = input("Guess a letter: ")
