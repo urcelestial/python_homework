@@ -1,0 +1,21 @@
+Question 1:
+Sections of the website that are restricted from crawling:
+Disallow: /w/
+Disallow: /api/
+Disallow: /trap/
+Disallow: /wiki/Special:
+Disallow: /wiki/Spezial:
+Disallow: /wiki/Spesial:
+Disallow: /wiki/Special%3A
+Disallow: /wiki/Spezial%3A
+Disallow: /wiki/Spesial%3A
+
+
+Question 2:
+Yes, there are specific rules for certain bot agents
+
+Question 3:
+The purpose of using a robots.txt is to implement boundaries for web crawlers and protecting their sevrers from being overloaded by automated traffic. 
+It encourages ethical web scraping between site owners, users, and developers by preventing any access to sensitive or high bandwidth directories.
+By following these guidelines, developers can protect their daya without disrupting the website's availability or violating any policy.
+
