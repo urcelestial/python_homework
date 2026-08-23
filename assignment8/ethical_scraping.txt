@@ -11,8 +11,13 @@ Disallow: /wiki/Spezial%3A
 Disallow: /wiki/Spesial%3A
 
 
+
+
 Question 2:
 Yes, there are specific rules for certain bot agents
+
+
+
 
 Question 3:
 The purpose of using a robots.txt is to implement boundaries for web crawlers and protecting their sevrers from being overloaded by automated traffic. 

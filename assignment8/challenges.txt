@@ -1,0 +1,10 @@
+The only challenge I have been facing during this task is
+extracting the top 10 vulnerabilites straight from the main page. 
+This is because the main page itself doesnt have the list,
+instead it presents a few direct link to year 2025 and before that
+contains the list. 
+
+It was difficult to figure out on what to do, espcially using the 
+XPATH to select the HTML elements. So I decided to select the link
+that directs to a 2025 page. This is to extract the top 10 vulnerabilites
+into the csv.
