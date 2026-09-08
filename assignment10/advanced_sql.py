@@ -34,16 +34,6 @@ except sqlite3.Error as e:
 
 
 # TASK 2 - UNDERSTANDING SUBQUERIES
-# find the average price of each customers' orders
-# return the customer_id (as customer_id_B) and total_price (as total_price)
-# do a left join of the customer table with the results of the subquery
-
-# use ON customer_id = customer_id_b
-# aliased the customer_id column
-# do a group by after (group by customer_id)
-
-# get the average of the total price of the customers' orders
-# return the customer name and the average_total_price
 
 try:
     conn = sqlite3.connect("./db/lesson.db")
